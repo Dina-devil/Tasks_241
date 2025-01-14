@@ -24,6 +24,9 @@ Systemd-юниты — объекты, с помощью которых systemd 
 
     systemctl stop sshd.service
 
+    ![Пункт 2-3](5-Systemd/5.1.1 Линукс.png)
+
+
 4. Перезапустите его.
 
     systemctl restart sshd.service
@@ -35,6 +38,8 @@ Systemd-юниты — объекты, с помощью которых systemd 
 6. Верните обратно
 
     systemctl enable sshd.service
+
+    ![Пункт 4-6](5-Systemd/5.1.2 Линукс.png)
 
 7. Что такое таймеры?
 Таймеры в systemd — файлы юнитов systemdс суффиксом .timer. Они позволяют контролировать файлы .service или события. В заданное время вызывают выполнение различных действий в системе.

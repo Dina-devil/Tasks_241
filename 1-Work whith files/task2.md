@@ -52,4 +52,5 @@ ping vk.com > /dev/null 2>&1
 
 ping vk.com < /dev/null > /dev/null 2>&1
 
+![Выполнение задания 1.2](1-Work whith files/Задание 1.2 Линукс.png)
 

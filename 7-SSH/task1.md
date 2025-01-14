@@ -27,20 +27,31 @@
 
     ssh student@arzdez.xyz -p 215
 
+    ![Пункт 5](7-SSH/7.1 линукс.png)
+
 6. Отредактируйте файл настроек на сервере так, чтобы была возможность подключиться к серверу используя пользователя root
     На скрине: меняем PermitRootLogin на: PermitRootLogin prohibit-password и перезапускаем sshd через systemctl restart sshd
 
+    ![Пункт 6](7-SSH/7.1.1 линукс.png)
+
+    ![Пункт 6](7-SSH/7.1.2 линукс.png)
+
 7. Измените колличество ошибок ввода пароля перед сборосом соединения, покажите эти измененения
     На скрине: меняем MaxAuthTries 6 на MaxAuthTries 3 и перезапускаем sshd через systemctl restart sshd
+
+    ![Пункт 7](7-SSH/7.1.3 линукс.png)
 
 8. Создайте пользователя ssh-user и попробуйте им подключиться к серверу
     adduser ssh-user
     passwd ssh-user
     ssh ssh-user@arzdez.xyz -p 215
 
+    ![Пункт 8](7-SSH/7.1.4 линукс.png)
+
 9. Ограничте ему возможность подключения к серверу
     На скрине: добавляем строку DenyUsers ssh-userи перезапускаем sshd через systemctl restart sshd
 
+    ![Пункт 9-10](7-SSH/7.1.5 линукс.png)
 
 10. Как вы это сделали?
     выше
